@@ -1,0 +1,51 @@
+body {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, main, footer, aside {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+header {
+    align-items: center ;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-list > li {
+    margin: 15px;
+}
+
+#main-ads-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    #main-ads-wrapper {
+        flex-direction: row;
+    }
+    
+    #nav-list {
+        flex-direction: row;
+    }
+}
