@@ -7,14 +7,14 @@ body {
     font-size: 1.2rem;
 }
 
-header {
+.header1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 4px solid black;
 }
 
-nav {
+.nav1 {
     min-width: 100vw;
     display: flex;
     flex-direction: column;
@@ -22,16 +22,24 @@ nav {
     align-items: center;
 }
 
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vw;
+    margin: 2%;
+}
+
 @media screen and (min-width: 600px) {
-    nav {
+    .nav1 {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-}
-
-@media screen and (max-width: 780) {
-    header {
-        background-color: blue;
     }
 }
