@@ -33,11 +33,19 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 100vw;
+    padding: 15px;
     margin: 2%;
+    outline: 4px inset grey;
 }
 
 @media screen and (min-width: 600px) {
     .nav1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav2 {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
